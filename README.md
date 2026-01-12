@@ -2,7 +2,7 @@
 
 ---
 
-## 🇬🇧 English
+## EN English
 
 This project is a frontend application developed using **React**, aiming to replicate a YouTube-like video browsing and viewing experience. It follows a **component-based architecture** and leverages modern **JavaScript (ES6+)** features.
 
