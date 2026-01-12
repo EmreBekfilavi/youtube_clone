@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje **React** kullanılarak geliştirilmiştir ve yoğun şekilde **JavaScript (ES6+)** içermektedir. Amaç; modern frontend pratiklerini kullanarak ölçeklenebilir, okunabilir ve kolay geliştirilebilir bir yapı sunmaktır.
 
-## Available Scripts
+## 🚀 Proje Özeti
 
-In the project directory, you can run:
+* React (Hooks & Functional Components)
+* Modern JavaScript (ES6+)
+* Component bazlı mimari
+* Modüler ve okunabilir kod yapısı
+* Geliştirme ve test odaklı kurulum
 
-### `npm start`
+Bu README dosyası, projeyi **local ortamınızda sorunsuz şekilde çalıştırabilmeniz** için gerekli tüm adımları açıklamaktadır.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Gereksinimler
 
-### `npm test`
+Projeyi çalıştırmadan önce sisteminizde aşağıdaki araçların kurulu olduğundan emin olun:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Node.js** (önerilen: LTS sürüm)
+* **npm** veya **yarn**
+* Git
 
-### `npm run build`
+Node.js sürümünüzü kontrol etmek için:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+node -v
+npm -v
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Kurulum
 
-### `npm run eject`
+### 1. Repoyu Klonlayın
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/EmreBekfilavi/youtube_clone
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd youtube_clone
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Bağımlılıkları Yükleyin
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+veya
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+yarn install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ▶️ Projeyi Çalıştırma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Local development ortamında projeyi ayağa kaldırmak için:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+veya
 
-### Making a Progressive Web App
+```bash
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Uygulama varsayılan olarak aşağıdaki adreste çalışacaktır:
 
-### Advanced Configuration
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Tarayıcı otomatik açılmazsa, adresi manuel olarak ziyaret edebilirsiniz.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🗂️ Proje Yapısı (Özet)
 
-### `npm run build` fails to minify
+```text
+src/
+ ├─ components/      # Tekrar kullanılabilir React componentleri
+ ├─ services/        # API ve dış servis işlemleri
+ ├─ utils/            # Yardımcı fonksiyonlar
+ ├─ assets/           # Statik dosyalar
+ ├─ App.js            # Ana uygulama bileşeni
+ └─ index.js          # Uygulama giriş noktası
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🌱 Ortam Değişkenleri
+
+Eğer projede environment variable kullanılıyorsa, root dizininde bir `.env` dosyası oluşturmanız gerekebilir:
+
+```env
+REACT_APP_API_URL=your_api_url_here
+```
+
+> **Not:** `REACT_APP_` ile başlayan değişkenler React tarafından erişilebilir.
+
+---
+
+## 🛠️ Build Alma
+
+Production build oluşturmak için:
+
+```bash
+npm run build
+```
+
+Bu işlem sonucunda `build/` klasörü oluşur ve deploy için hazır hale gelir.
+
+---
+
+## 🧪 Testler (Varsa)
+
+```bash
+npm test
+```
+
+---
+
+## 📌 Notlar
+
+* Proje **local development** için optimize edilmiştir.
+* Kod yapısı genişletilmeye uygundur.
+* React best practice’leri göz önünde bulundurulmuştur.
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Pull request’ler her zaman açıktır. Büyük değişiklikler için lütfen önce bir issue açınız.
+
+---
+
+## 📄 Lisans
+
+Bu proje kişisel/öğrenme amaçlı geliştirilmiştir. Lisans bilgisi eklemek isterseniz burayı güncelleyebilirsiniz.
+
+---
+
+✨ Her türlü geri bildirim ve katkı için teşekkürler!
